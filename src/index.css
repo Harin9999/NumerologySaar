@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+  }
+  
+  body {
+    @apply antialiased;
+    background: linear-gradient(to bottom, #4A0404, #2B0000);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .scroll-mt-16 {
+    scroll-margin-top: 4rem;
+  }
+
+  .scroll-bg {
+    background: linear-gradient(to bottom, #FFF8DC, #F5DEB3);
+    border: 2px solid #8B0000;
+    box-shadow: 
+      0 10px 25px -5px rgba(0, 0, 0, 0.3),
+      0 8px 10px -6px rgba(0, 0, 0, 0.2),
+      inset 0 0 20px rgba(139, 0, 0, 0.1);
+  }
+
+  .royal-gold {
+    background: linear-gradient(120deg, #DAA520, #B8860B, #CD853F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .royal-button {
+    background: linear-gradient(to right, #8B0000, #4A0404);
+    border: 2px solid #DAA520;
+    box-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .royal-button:hover {
+    background: linear-gradient(to right, #4A0404, #8B0000);
+    border-color: #B8860B;
+    box-shadow: 0 0 20px rgba(218, 165, 32, 0.5);
+  }
+
+  .royal-button:disabled {
+    border-color: rgba(218, 165, 32, 0.3);
+    box-shadow: none;
+  }
+}
+
+/* Form Styles */
+input {
+  background: #FFF8DC !important;
+  border-color: #8B0000 !important;
+}
+
+input:focus {
+  box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.2) !important;
+  border-color: #4A0404 !important;
+}

@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /temp/
+Disallow: /draft/
+Disallow: /*?*
+
+# Allow CSS, JS, and Images
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.ico$
+Allow: /*.woff$
+Allow: /*.woff2$
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Sitemaps
+Sitemap: https://numerologysaar.com/sitemap.xml
